@@ -1,0 +1,122 @@
+body {
+    display: flex;
+    justify-content: center;
+   
+    background-color: #003994;
+}
+
+
+.words {
+    color: white;
+    
+}
+
+.container{
+    width: 800px;
+    height: 500px;
+    margin: 200px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background-color: #7aaaf5;
+}
+
+.container:hover{
+    box-shadow: 0 0 75px rgba(250, 172, 2, 0.416);
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.25);
+    background: linear-gradient(250deg, #003994, #7aaaf5);
+}
+
+.score {
+    display: flex;
+    gap: 10rem;
+}
+
+.total-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.round-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.dice-container {
+    display: flex;
+    margin-top: 75px;
+
+}
+
+.dice {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.25);
+    background-color: rgb(255, 215, 0);
+}
+
+.dice-circle {
+    --top: 0%;
+    --left: 0%;
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: var(--top);
+    left: var(--left);
+    transform: translateX(calc(var(--left)*-1)) translateY(calc(var(--top)*-1));
+}
+
+.buttons {
+    margin-top: 50px;
+    display: flex;
+    gap: 10rem;
+}
+
+button {
+    position: relative;
+    text-decoration: none;
+    display: flex;
+    padding: 12px 36px;
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: white;
+    letter-spacing: 2px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #003994, #7aaaf5);
+}
+
+.banner {
+    background-color: green;
+    display: none;
+    width: 100%;
+    margin-top: 195px;
+    transform: translateZ(20px);
+    box-shadow: 0 0 75px rgba(250, 172, 2, 0.416);
+}
+
+.banner .winner {
+    display: flex;
+    justify-content: center;
+    transform: translateZ(20px);
+}
+
